@@ -1,212 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Garbero's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f2777f7c4a.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alex Garbero's Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/f2777f7c4a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/GM-logo.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Full Stack Software Engineer</p>
-                <h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego</h1>
-            </div>
-        </div>
-    </div>
-    
-    <!------- about ------->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/portrait-2.png" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p>As a Computer Science graduate from San Diego State University with a passion for AI and full stack development, I'm driven to innovate, create, and adapt in the world of software engineering. I have multiple projects demonstrating my competency in OOP and basic computer science principles.</p>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="images/GM-logo.png" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Full Stack Software Engineer</p>
+				<h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego</h1>
+			</div>
+		</div>
+	</div>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Full Stack Programmer</span><br>HTML, CSS, Javascript, React.js, Node.js, SQL</li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>Full Stack Design</span><br>Front End and Back End</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Aug 2023 - Current</span><br>AI Powered Email Organization Tool</li>
-                            <li><span>Aug 2023 - Dec 2023</span><br>3D Bartending Game</li>
-                            <li><span>Feb 2023</span><br>Photography Pricing Tool</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>BS in Computer Science</span><br>San Diego State University<br>Aug 2018 - December 2023</li>
-                            <li><span>Continued Learning</span><br>Codecademy<br>Aug 2018 - Current</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------- services ------->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-paintbrush"></i>
-                    <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-layer-group"></i>
-                    <h2>Full Stack Development</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!------- portfolio ------->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>AI Email Organizer</h3>
-                        <p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
-                        <a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>3D Bartending Game</h3>
-                        <p>Enter the eyes of a bartender and practice your cocktail crafting skills.</p>
-                        <a href="https://github.com/Alex-Garbero/Bartender3DNEW" target="_blank"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Photography Pricing Tool</h3>
-                        <p>Enter the logistics and get a fast quote.</p>
-                        <a href="https://github.com/Alex-Garbero/PhotographyPricingTool" target="_blank"><i class="fas fa-link"></i></a>
-                    </div>
-                </div>
-            </div>
-            <!-- <a href="#" class="btn">See More</a> -->
-        </div>
-    </div>
-    <!------- contact ------->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> aegarbero@gmail.com</p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/alex-garbero-a8356b177/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
-                        <a href="https://github.com/Alex-Garbero"><i class="fa-brands fa-github" target="_blank"></i></a>
-                        <a href="http://garberomedia.com/"><i class="fa-solid fa-images" target="_blank"></i></a>
-                        <a href="https://www.instagram.com/alexgarbero/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
-                    </div>
-                    <a href="Alexander-Garbero-Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy Alexander Garbero</p>
-        </div>
-    </div>
+	<!------- about ------->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="images/portrait-2.png" alt="">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>As a Computer Science graduate from San Diego State University with a passion for AI and full
+						stack development, I'm driven to innovate, create, and adapt in the world of software
+						engineering. I have multiple projects demonstrating my competency in OOP and basic computer
+						science principles.</p>
 
-    <script>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('education')">Education</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>Full Stack Programmer</span><br>HTML, CSS, Javascript, React.js, Node.js, SQL</li>
+							<li><span>Web Development</span><br>Web App Development</li>
+							<li><span>Full Stack Design</span><br>Front End and Back End</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>Aug 2023 - Current</span><br>AI Powered Email Organization Tool</li>
+							<li><span>Aug 2023 - Dec 2023</span><br>3D Bartending Game</li>
+							<li><span>Feb 2023</span><br>Photography Pricing Tool</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>BS in Computer Science</span><br>San Diego State University<br>Aug 2018 - December
+								2023</li>
+							<li><span>Continued Learning</span><br>Codecademy<br>Aug 2018 - Current</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------- services ------->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">My Services</h1>
+			<div class="services-list">
+				<div>
+					<i class="fa-solid fa-laptop-code"></i>
+					<h2>Web Design</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
+					<!-- <a href="#">Learn more</a> -->
+				</div>
+				<div>
+					<i class="fa-solid fa-paintbrush"></i>
+					<h2>UI/UX Design</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
+					<!-- <a href="#">Learn more</a> -->
+				</div>
+				<div>
+					<i class="fa-solid fa-layer-group"></i>
+					<h2>Full Stack Development</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et dolore magna aliqua.</p>
+					<!-- <a href="#">Learn more</a> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!------- portfolio ------->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+			<div class="work-list">
+				<div class="work">
+					<img src="images/work-1.png" alt="">
+					<div class="layer">
+						<h3>AI Email Organizer</h3>
+						<p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
+						<a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i
+								class="fas fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/work-2.png" alt="">
+					<div class="layer">
+						<h3>3D Bartending Game</h3>
+						<p>Enter the eyes of a bartender and practice your cocktail crafting skills.</p>
+						<a href="https://github.com/Alex-Garbero/Bartender3DNEW" target="_blank"><i
+								class="fas fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/work-3.png" alt="">
+					<div class="layer">
+						<h3>Simple To-Do List</h3>
+						<p>Add tasks with the option to edit and/or delete them.</p>
+						<a href="https://garbero-reactjs-todos.netlify.app/" target="_blank"><i
+								class="fas fa-link"></i></a>
+					</div>
+				</div>
+			</div>
+			<!-- <a href="#" class="btn">See More</a> -->
+		</div>
+	</div>
+	<!------- contact ------->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-solid fa-paper-plane"></i> aegarbero@gmail.com</p>
+					<div class="social-icons">
+						<a href="https://www.linkedin.com/in/alex-garbero-a8356b177/"><i class="fa-brands fa-linkedin"
+								target="_blank"></i></a>
+						<a href="https://github.com/Alex-Garbero"><i class="fa-brands fa-github"
+								target="_blank"></i></a>
+						<a href="http://garberomedia.com/"><i class="fa-solid fa-images" target="_blank"></i></a>
+						<a href="https://www.instagram.com/alexgarbero/"><i class="fa-brands fa-instagram"
+								target="_blank"></i></a>
+					</div>
+					<a href="Alexander-Garbero-Resume.pdf" download class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright &copy Alexander Garbero</p>
+		</div>
+	</div>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+	<script>
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
 
-    </script>
-    <script>
+		function opentab(tabname) {
+			for (tablink of tablinks) {
+				tablink.classList.remove("active-link");
+			}
+			for (tabcontent of tabcontents) {
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
 
-        var sidemenu = document.getElementById("sidemenu");
+	</script>
+	<script>
 
-        function openmenu(){
-            sidemenu.style.right = "0";
-        }
-        function closemenu(){
-            sidemenu.style.right = "-200px";
-        }
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu() {
+			sidemenu.style.right = "0";
+		}
+		function closemenu() {
+			sidemenu.style.right = "-200px";
+		}
 
 
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2MQnBsL0oP3a_wki68fLjpZT7PaowsjS4wjz7fEZCqtP5fcN7dJpSunMsf-hxgvIQJQ/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                },5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
+	</script>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbx2MQnBsL0oP3a_wki68fLjpZT7PaowsjS4wjz7fEZCqtP5fcN7dJpSunMsf-hxgvIQJQ/exec'
+		const form = document.forms['submit-to-google-sheet']
+		const msg = document.getElementById("msg")
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+				.then(response => {
+					msg.innerHTML = "Message sent successfully"
+					setTimeout(function () {
+						msg.innerHTML = ""
+					}, 5000)
+					form.reset()
+				})
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
 
 </body>
+
 </html>
