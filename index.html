@@ -13,12 +13,12 @@
 	<div id="header">
 		<div class="container">
 			<nav>
-				<img src="images/GM-logo.png" class="logo">
+				<!-- <img src="images/GM-logo.png" class="logo"> -->
 				<ul id="sidemenu">
 					<li><a href="#header">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#projects">Projects</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 				</ul>
@@ -26,7 +26,7 @@
 			</nav>
 			<div class="header-text">
 				<p>Full Stack Software Engineer</p>
-				<h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego</h1>
+				<h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego.</h1>
 			</div>
 		</div>
 	</div>
@@ -36,7 +36,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="about-col-1">
-					<img src="images/portrait-2.png" alt="">
+					<img src="images/grad-portrait.jpg" alt="">
 				</div>
 				<div class="about-col-2">
 					<h1 class="sub-title">About Me</h1>
@@ -52,23 +52,72 @@
 					</div>
 					<div class="tab-contents active-tab" id="skills">
 						<ul>
-							<li><span>Full Stack Programmer</span><br>HTML, CSS, Javascript, React.js, Node.js, SQL</li>
-							<li><span>Web Development</span><br>Web App Development</li>
-							<li><span>Full Stack Design</span><br>Front End and Back End</li>
+							<li>
+								<span>Full Stack Programmer</span>
+								<br>HTML, CSS, Javascript, React.js, Tailwind CSS, Node.js, PostgreSQL
+							</li>
+							<li>
+								<span>Web Development</span>
+								<br>Creating strong web applications that serve as helpful tools for the average person
+							</li>
+							<li>
+								<span>Full Stack Design</span>
+								<br>Experience with both Frontend and Backend web development
+							</li>
 						</ul>
 					</div>
 					<div class="tab-contents" id="experience">
 						<ul>
-							<li><span>Aug 2023 - Current</span><br>AI Powered Email Organization Tool</li>
-							<li><span>Aug 2023 - Dec 2023</span><br>3D Bartending Game</li>
-							<li><span>Feb 2023</span><br>Photography Pricing Tool</li>
+							<li>
+								<span>Aug 2023 - Current</span><br>AI Powered Email Organization Tool
+							</li>
+							<li>
+								<span>Aug 2023 - Dec 2023</span><br>3D Bartending Game
+							</li>
+							<li>
+								<span>May 2024</span><br>To-Do List Web App
+							</li>
+							<li>
+								<span>May 2024</span><br>NASA Astronomy Picture of the Day Web App
+							</li>
+							<li>
+								<span>May 2024</span><br>Gym Routine Generator Web App
+							</li>
+							<li>
+								<span>May 2024 - June 2024</span><br>Machine Learning Language Translator and
+								Transcriber
+							</li>
 						</ul>
 					</div>
 					<div class="tab-contents" id="education">
 						<ul>
-							<li><span>BS in Computer Science</span><br>San Diego State University<br>Aug 2018 - December
-								2023</li>
-							<li><span>Continued Learning</span><br>Codecademy<br>Aug 2018 - Current</li>
+							<li>
+								<ul>
+									<span>BS in Computer Science</span>
+									<li>San Diego State University
+										<br>Aug 2018 - December
+										2023
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Codecademy</span>
+								<ul>
+									<li>
+										Full Stack Engineer Career Path
+										<br>Aug 2020 - Current
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span>Continued Learning</span>
+								<ul>
+									<li>
+										LOTS of YouTube tutorials
+										<br>December 2023 - Current
+									</li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -105,22 +154,22 @@
 			</div>
 		</div>
 	</div>
-	<!------- portfolio ------->
-	<div id="portfolio">
+	<!------- projects ------->
+	<div id="projects">
 		<div class="container">
-			<h1 class="sub-title">My Work</h1>
+			<h1 class="sub-title">My Projects</h1>
 			<div class="work-list">
 				<div class="work">
-					<img src="images/work-1.png" alt="">
+					<img src="images/pencil1.png" alt="">
 					<div class="layer">
-						<h3>AI Email Organizer</h3>
-						<p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
-						<a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i
+						<h3>To-Do List App</h3>
+						<p>Make a list of your most important tasks.</p>
+						<a href="https://garbero-reactjs-todos.netlify.app/" target="_blank"><i
 								class="fas fa-link"></i></a>
 					</div>
 				</div>
 				<div class="work">
-					<img src="images/work-2.png" alt="">
+					<img src="images/space.png" alt="">
 					<div class="layer">
 						<h3>APOD NASA App</h3>
 						<p>Get the Astronomy Picture Of The Day using NASA's API.</p>
@@ -134,6 +183,16 @@
 						<h3>Gym Training App</h3>
 						<p>Create a custom gym routine based on your lifting preferences.</p>
 						<a href="https://garbero-swoley-fit.netlify.app/" target="_blank"><i
+								class="fas fa-link"></i></a>
+					</div>
+				</div>
+				<div class="work">
+					<img src="images/email.png" alt="">
+					<div class="layer">
+						<h3>AI Email Organizer</h3>
+						<h4>( In Progress! )</h4>
+						<p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
+						<a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i
 								class="fas fa-link"></i></a>
 					</div>
 				</div>
