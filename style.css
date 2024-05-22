@@ -182,7 +182,7 @@ nav ul li a:hover::after {
 	background: #f4f5f6;
 	padding: 40px;
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 550;
 	border-radius: 10px;
 	transition: background, transform 0.5s;
 }
@@ -212,7 +212,7 @@ nav ul li a:hover::after {
 }
 
 /* ------- portfolio ------- */
-#portfolio {
+#projects {
 	padding: 50px 0;
 }
 
