@@ -2,286 +2,294 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Alex Garbero's Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/f2777f7c4a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Garbero's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f2777f7c4a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<div id="header">
-		<div class="container">
-			<nav>
-				<!-- <img src="images/GM-logo.png" class="logo"> -->
-				<ul id="sidemenu">
-					<li><a href="#header">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-				</ul>
-				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-			</nav>
-			<div class="header-text">
-				<p>Full Stack Software Engineer</p>
-				<h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego.</h1>
-			</div>
-		</div>
-	</div>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/GM-logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Software Engineer</p>
+                <h1>Hi, I'm <span class="alex">Alex</span> <span class="garbero">Garbero</span><br>from San Diego.</h1>
+            </div>
+        </div>
+    </div>
 
-	<!------- about ------->
-	<div id="about">
-		<div class="container">
-			<div class="row">
-				<div class="about-col-1">
-					<img src="images/grad-portrait.jpg" alt="">
-				</div>
-				<div class="about-col-2">
-					<h1 class="sub-title">About Me</h1>
-					<p>As a Computer Science graduate from San Diego State University with a passion for AI and full
-						stack development, I'm driven to innovate, create, and adapt in the world of software
-						engineering. I have multiple projects demonstrating my competency in OOP and basic computer
-						science principles.</p>
+    <!------- about ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/grad-portrait.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a Computer Science graduate from San Diego State University with a passion for AI and full
+                        stack development, I'm driven to innovate, create, and adapt in the world of software
+                        engineering. I have multiple projects demonstrating my competency in OOP and basic computer
+                        science principles.</p>
 
-					<div class="tab-titles">
-						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-						<p class="tab-links" onclick="opentab('experience')">Experience</p>
-						<p class="tab-links" onclick="opentab('education')">Education</p>
-					</div>
-					<div class="tab-contents active-tab" id="skills">
-						<ul>
-							<li>
-								<span>Full Stack Programmer</span>
-								<br>HTML, CSS, Javascript, React.js, Tailwind CSS, Node.js, PostgreSQL
-							</li>
-							<li>
-								<span>Web Development</span>
-								<br>Creating strong web applications that serve as helpful tools for the average person
-							</li>
-							<li>
-								<span>Full Stack Design</span>
-								<br>Experience with both Frontend and Backend web development
-							</li>
-						</ul>
-					</div>
-					<div class="tab-contents" id="experience">
-						<ul>
-							<li>
-								<span>Aug 2023 - Current</span><br>AI Powered Email Organization Tool
-							</li>
-							<li>
-								<span>Aug 2023 - Dec 2023</span><br>3D Bartending Game
-							</li>
-							<li>
-								<span>May 2024</span><br>To-Do List Web App
-							</li>
-							<li>
-								<span>May 2024</span><br>NASA Astronomy Picture of the Day Web App
-							</li>
-							<li>
-								<span>May 2024</span><br>Gym Routine Generator Web App
-							</li>
-							<li>
-								<span>May 2024 - June 2024</span><br>Machine Learning Language Translator and
-								Transcriber
-							</li>
-						</ul>
-					</div>
-					<div class="tab-contents" id="education">
-						<ul>
-							<li>
-								<ul>
-									<span>BS in Computer Science</span>
-									<li>San Diego State University
-										<br>Aug 2018 - December
-										2023
-									</li>
-								</ul>
-							</li>
-							<li>
-								<span>Codecademy</span>
-								<ul>
-									<li>
-										Full Stack Engineer Career Path
-										<br>Aug 2020 - Current
-									</li>
-								</ul>
-							</li>
-							<li>
-								<span>Continued Learning</span>
-								<ul>
-									<li>
-										LOTS of YouTube tutorials
-										<br>December 2023 - Current
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!------- services ------->
-	<div id="services">
-		<div class="container">
-			<h1 class="sub-title">My Services</h1>
-			<div class="services-list">
-				<div>
-					<i class="fa-solid fa-laptop-code"></i>
-					<h2>Web Design</h2>
-					<p>I will craft visually stunning and intuitive designs that ensure your website stands out and
-						effectively communicates your brand message. Tailored aesthetics that resonate with your
-						audience.</p>
-					<!-- <a href="#">Learn more</a> -->
-				</div>
-				<div>
-					<i class="fa-solid fa-paintbrush"></i>
-					<h2>UI/UX Design</h2>
-					<p>Enhance your user's journey with designs that are not only appealing but also user-friendly. I
-						focus on creating seamless interactions and a satisfying user experience.</p>
-					<!-- <a href="#">Learn more</a> -->
-				</div>
-				<div>
-					<i class="fa-solid fa-layer-group"></i>
-					<h2>Full Stack Development</h2>
-					<p>I build responsive and dynamic interfaces that bring your site to life. Engage your visitors with
-						a smooth, interactive, and visually appealing online presence.</p>
-					<!-- <a href="#">Learn more</a> -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!------- projects ------->
-	<div id="projects">
-		<div class="container">
-			<h1 class="sub-title">My Projects</h1>
-			<div class="work-list">
-				<div class="work">
-					<img src="images/pencil1.png" alt="">
-					<div class="layer">
-						<h3>To-Do List App</h3>
-						<p>Make a list of your most important tasks.</p>
-						<a href="https://garbero-reactjs-todos.netlify.app/" target="_blank"><i
-								class="fas fa-link"></i></a>
-					</div>
-				</div>
-				<div class="work">
-					<img src="images/space.png" alt="">
-					<div class="layer">
-						<h3>APOD NASA App</h3>
-						<p>Get the Astronomy Picture Of The Day using NASA's API.</p>
-						<a href="https://garbero-react-nasa.netlify.app/" target="_blank"><i
-								class="fas fa-link"></i></a>
-					</div>
-				</div>
-				<div class="work">
-					<img src="images/gym.png" alt="">
-					<div class="layer">
-						<h3>Gym Training App</h3>
-						<p>Create a custom gym routine based on your lifting preferences.</p>
-						<a href="https://garbero-swoley-fit.netlify.app/" target="_blank"><i
-								class="fas fa-link"></i></a>
-					</div>
-				</div>
-				<div class="work">
-					<img src="images/email.png" alt="">
-					<div class="layer">
-						<h3>AI Email Organizer</h3>
-						<h4>( In Progress! )</h4>
-						<p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
-						<a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i
-								class="fas fa-link"></i></a>
-					</div>
-				</div>
-			</div>
-			<!-- <a href="#" class="btn">See More</a> -->
-		</div>
-	</div>
-	<!------- contact ------->
-	<div id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="contact-left">
-					<h1 class="sub-title">Contact Me</h1>
-					<p><i class="fa-solid fa-paper-plane"></i> aegarbero@gmail.com</p>
-					<div class="social-icons">
-						<a href="https://www.linkedin.com/in/alex-garbero-a8356b177/"><i class="fa-brands fa-linkedin"
-								target="_blank"></i></a>
-						<a href="https://github.com/Alex-Garbero"><i class="fa-brands fa-github"
-								target="_blank"></i></a>
-						<a href="http://garberomedia.com/"><i class="fa-solid fa-images" target="_blank"></i></a>
-						<a href="https://www.instagram.com/alexgarbero/"><i class="fa-brands fa-instagram"
-								target="_blank"></i></a>
-					</div>
-					<a href="Alexander-Garbero-Resume.pdf" download class="btn btn2">Download CV</a>
-				</div>
-				<div class="contact-right">
-					<form name="submit-to-google-sheet">
-						<input type="text" name="Name" placeholder="Your Name" required>
-						<input type="email" name="Email" placeholder="Your Email" required>
-						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-						<button type="submit" class="btn btn2">Submit</button>
-					</form>
-					<span id="msg"></span>
-				</div>
-			</div>
-		</div>
-		<div class="copyright">
-			<p>Copyright &copy Alexander Garbero</p>
-		</div>
-	</div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Full Stack Programmer</span>
+                                <br>HTML, CSS, Javascript, React.js, Tailwind CSS, Node.js, PostgreSQL
+                            </li>
+                            <li>
+                                <span>Web Development</span>
+                                <br>Creating strong web applications that serve as innovative tools
+                            </li>
+                            <li>
+                                <span>Full Stack Design</span>
+                                <br>Experience with both Frontend and Backend web development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Aug 2023 - Current</span>
+                                <br><a href="https://github.com/Alex-Garbero/ZenboxAI">AI Powered Email Organization
+                                    Tool</a>
+                            </li>
+                            <li>
+                                <span>Aug 2023 - Dec 2023</span>
+                                <br><a href="https://github.com/Alex-Garbero/Bartender3DNEW">3D Bartending Game</a>
+                            </li>
+                            <li>
+                                <span>May 2024</span>
+                                <br><a href="https://garbero-reactjs-todos.netlify.app/">To-Do List Web App</a>
+                            </li>
+                            <li>
+                                <span>May 2024</span>
+                                <br><a href="https://garbero-react-nasa.netlify.app/">NASA Astronomy Picture of the Day
+                                    Web App</a>
+                            </li>
+                            <li>
+                                <span>May 2024</span>
+                                <br><a href="https://garbero-swoley-fit.netlify.app/">Gym Routine Generator Web App</a>
+                            </li>
+                            <li>
+                                <span>May 2024 - June 2024</span>
+                                <br><a href="">Machine Learning Language Translator and
+                                    Transcriber</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <ul>
+                                    <span>BS in Computer Science</span>
+                                    <li>San Diego State University
+                                        <br>Aug 2018 - December
+                                        2023
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Codecademy</span>
+                                <ul>
+                                    <li>
+                                        Full Stack Engineer Career Path
+                                        <br>Aug 2020 - Current
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Continued Learning</span>
+                                <ul>
+                                    <li>
+                                        LOTS of YouTube tutorials
+                                        <br>December 2023 - Current
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- services ------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I will craft visually stunning and intuitive designs that ensure your website stands out and
+                        effectively communicates your brand message. Tailored aesthetics that resonate with your
+                        audience.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Enhance your user's journey with designs that are not only appealing but also user-friendly. I
+                        focus on creating seamless interactions and a satisfying user experience.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>I build responsive and dynamic interfaces that bring your site to life. Engage your visitors with
+                        a smooth, interactive, and visually appealing online presence.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------- projects ------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/pencil1.png" alt="">
+                    <div class="layer">
+                        <h3>To-Do List App</h3>
+                        <p>Make a list of your most important tasks.</p>
+                        <a href="https://garbero-reactjs-todos.netlify.app/" target="_blank"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/space.png" alt="">
+                    <div class="layer">
+                        <h3>APOD NASA App</h3>
+                        <p>Get the Astronomy Picture Of The Day using NASA's API.</p>
+                        <a href="https://garbero-react-nasa.netlify.app/" target="_blank"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gym.png" alt="">
+                    <div class="layer">
+                        <h3>Gym Training App</h3>
+                        <p>Create a custom gym routine based on your lifting preferences.</p>
+                        <a href="https://garbero-swoley-fit.netlify.app/" target="_blank"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/email.png" alt="">
+                    <div class="layer">
+                        <h3>AI Email Organizer</h3>
+                        <h4>( In Progress! )</h4>
+                        <p>Suggesting a more peaceful, decluttered inbox thanks to AI.</p>
+                        <a href="https://github.com/Alex-Garbero/ZenboxAI" target="_blank"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+    <!------- contact ------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> aegarbero@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/alex-garbero-a8356b177/"><i class="fa-brands fa-linkedin"
+                                target="_blank"></i></a>
+                        <a href="https://github.com/Alex-Garbero"><i class="fa-brands fa-github"
+                                target="_blank"></i></a>
+                        <a href="http://garberomedia.com/"><i class="fa-solid fa-images" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/alexgarbero/"><i class="fa-brands fa-instagram"
+                                target="_blank"></i></a>
+                    </div>
+                    <a href="Alexander-Garbero-Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy Alexander Garbero</p>
+        </div>
+    </div>
 
-	<script>
+    <script>
 
-		var tablinks = document.getElementsByClassName("tab-links");
-		var tabcontents = document.getElementsByClassName("tab-contents");
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-		function opentab(tabname) {
-			for (tablink of tablinks) {
-				tablink.classList.remove("active-link");
-			}
-			for (tabcontent of tabcontents) {
-				tabcontent.classList.remove("active-tab");
-			}
-			event.currentTarget.classList.add("active-link");
-			document.getElementById(tabname).classList.add("active-tab");
-		}
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
 
-	</script>
-	<script>
+    </script>
+    <script>
 
-		var sidemenu = document.getElementById("sidemenu");
+        var sidemenu = document.getElementById("sidemenu");
 
-		function openmenu() {
-			sidemenu.style.right = "0";
-		}
-		function closemenu() {
-			sidemenu.style.right = "-200px";
-		}
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
 
 
-	</script>
-	<script>
-		const scriptURL = 'https://script.google.com/macros/s/AKfycbx2MQnBsL0oP3a_wki68fLjpZT7PaowsjS4wjz7fEZCqtP5fcN7dJpSunMsf-hxgvIQJQ/exec'
-		const form = document.forms['submit-to-google-sheet']
-		const msg = document.getElementById("msg")
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2MQnBsL0oP3a_wki68fLjpZT7PaowsjS4wjz7fEZCqtP5fcN7dJpSunMsf-hxgvIQJQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-		form.addEventListener('submit', e => {
-			e.preventDefault()
-			fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-				.then(response => {
-					msg.innerHTML = "Message sent successfully"
-					setTimeout(function () {
-						msg.innerHTML = ""
-					}, 5000)
-					form.reset()
-				})
-				.catch(error => console.error('Error!', error.message))
-		})
-	</script>
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
 
