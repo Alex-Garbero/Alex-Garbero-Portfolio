@@ -158,6 +158,18 @@
                                     <strong>BS, Computer Science — San Diego State University</strong>
                                     December 2023 · Data Structures &amp; OOP, Algorithms, Operating Systems, Machine Learning, AI, Networks &amp; Distributed Systems, Computer Security
                                 </article>
+                                <article class="tab-item">
+                                    <strong>Full Stack Engineer Career Path — Codecademy</strong>
+                                    Comprehensive curriculum covering front-end, back-end, databases, and deployment across the full web stack.
+                                </article>
+                                <article class="tab-item">
+                                    <strong>Learn Vue.js Certificate — Codecademy</strong>
+                                    Components, directives, reactivity, Vue Router, and building production-ready single-page applications.
+                                </article>
+                                <article class="tab-item">
+                                    <strong>Intro to Cloud Computing Certificate — Codecademy</strong>
+                                    Core cloud concepts, service models (IaaS, PaaS, SaaS), and foundational infrastructure principles.
+                                </article>
                             </div>
                         </div>
                     </div>
@@ -376,7 +388,7 @@
         // ── Tabs ───────────────────────────────────────────────────
         document.querySelectorAll('.tabs-nav').forEach(nav => {
             const btns   = nav.querySelectorAll('.tab-btn');
-            const panels = nav.closest('[class*="-col"], div').querySelectorAll('.tab-panel');
+            const panels = nav.parentElement.querySelectorAll('.tab-panel');
 
             btns.forEach((btn, i) => {
                 btn.addEventListener('click', () => {
